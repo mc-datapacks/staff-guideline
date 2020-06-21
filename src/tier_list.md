@@ -1,6 +1,6 @@
 # About
 
-This section contain a list of conventions and where it is placed in the tier system.
+This section contains a list of conventions and where it is in the tier system.
 
 |Convention|Levels|
 |----------|------|
@@ -11,4 +11,4 @@ This section contain a list of conventions and where it is placed in the tier sy
 |[Custom Model ID](https://mc-datapacks.github.io/en/conventions/custom_model_id.html)|Tier 3|
 |[Shulker Box Loot Table](https://mc-datapacks.github.io/en/conventions/shulker_box_loot_table.html)|Tier 3|
 
-> This **must** be updated whenever a change has been made to the official conventions list by any mean!
+> This **must** be updated whenever a change has been made to the official conventions list by any means!

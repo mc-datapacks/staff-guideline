@@ -1,6 +1,6 @@
 ## Custom Model ID (***)
 
-> This step can be skip if the datapack does not required resourcepack to play.
+> This step can be skipped if the datapack does not require a resourcepack to play.
 
 1. Check the `ID` of the model and the `ID` that datapacker claim using [https://mc-datapacks.web.app](https://mc-datapacks.web.app/custom_model_id)
 
@@ -8,7 +8,7 @@
 > This passed because the correct ID is used and it followed the convention correctly.
 
 ![](./review/incorrect_cmd_usage.png)
-> Wrong `ID`, this should be `808` because Boomber claim the ID of `808` not `82`.
+> Wrong `ID`, this should be `808` because Boomber claims the ID of `808` not `82`.
 
 ![](./review/incorrect_cmd_usage_2.png)
 > There was no attempt at following the convention here at all.

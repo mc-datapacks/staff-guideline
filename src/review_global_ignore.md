@@ -1,9 +1,9 @@
 ## Global Ignoring Tag (***)
 
-This convention can be split into two side: Entity Selection and Entity Creation.
+This convention can be split into two sides: Entity Selection and Entity Creation.
 
-- Entity Selection refer to using global ignoring tag inside entity selector such as `@e` and `@a`.
-- Entity Creation refer to using global ignoring tag when summoning or creating an entity, such as `/summon`.
+- Entity Selection refers to using global ignoring tag inside entity selectors such as `@e` and `@a`.
+- Entity Creation refers to using global ignoring tag when summoning or creating an entity, such as `/summon`.
 
 1. Verify entity selector
 
@@ -16,7 +16,7 @@ This convention can be split into two side: Entity Selection and Entity Creation
 2. Verify entity creation
 
 ![](./review/correct_git_usage.png)
-> This is a valid place to not use global ignoring tag since this is a temporary entity that is kill off rightaway.
+> This is a valid place to not use global ignoring tag since this is a temporary entity that is killed off right away.
 
 ![](./review/correct_git_usage_2.png)
 > This is a valid place to not use global ignoring tag since this is a custom mob entity that *should* be able to be manipulated by other datapacks. Such as receiving damage or being push away.
@@ -26,5 +26,5 @@ This convention can be split into two side: Entity Selection and Entity Creation
 
 ## Note
 
-Since Global Ignoring Tag convention is an opt-in system, if the datapacker insist that their entity shouldn't have global ignoring tag. They will still pass.
-There is no such exception in Entity Selection part, however.
+Since Global Ignoring Tag convention is an opt-in system if the datapacker insist that their entity shouldn't have global ignoring tag. They will still pass.
+There is no such exception in the Entity Selection part, however.
