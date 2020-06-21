@@ -1,0 +1,9 @@
+[book]
+authors = ["oOBoomberOo"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Staff Guideline"
+
+[build]
+build-dir = "docs"
