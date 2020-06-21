@@ -150,16 +150,16 @@
                 <div id="content" class="content">
                     <main>
                         <h1><a class="header" href="#datapack-review" id="datapack-review">Datapack Review</a></h1>
-<p>This section contain information about how to properly verify a datapack inside <code>#📍request-review</code> channel.</p>
+<p>This section contains information about how to properly verify a datapack inside <code>#📍request-review</code> channel.</p>
 <h2><a class="header" href="#tooling" id="tooling">Tooling</a></h2>
-<p>Although this step is not required, this tooling is recommend by me for its convenient with verifying datapack.</p>
+<p>Although this step is not required, this tooling is recommended by me for its convenience with verifying datapack.</p>
 <ol>
 <li>Install <a href="https://code.visualstudio.com/">VS Code</a> or <a href="https://vscodium.com/">VS Codium</a></li>
 <li>Install the following extensions.
 <ol>
 <li><a href="https://marketplace.visualstudio.com/items?itemName=SPGoding.datapack-language-server">Datapack Helper Plus (MCF)</a>
 <ul>
-<li>This extension provide a syntax highlighting and various helper functionality to navigate through datapack.</li>
+<li>This extension provides a syntax highlighting and various helper functionality to navigate through datapack.</li>
 </ul>
 </li>
 <li><a href="https://marketplace.visualstudio.com/items?itemName=SPGoding.datapack-json">Datapack Helper Plus (JSON)</a>
@@ -169,26 +169,26 @@
 </li>
 <li><a href="https://marketplace.visualstudio.com/items?itemName=actuallyboomber.tellraw-preview">tellraw preview</a>
 <ul>
-<li>This extension provide text preview for commands that display message to the player.</li>
+<li>This extension provides text preview for commands that display a message to the player.</li>
 </ul>
 </li>
 </ol>
 </li>
 </ol>
 <h2><a class="header" href="#verifying-a-datapack" id="verifying-a-datapack">Verifying a Datapack</a></h2>
-<p>A datapack <strong>must</strong> follow all of <strong>Tier 3</strong> conventions to be verified and any datapack that does not follow <strong>Tier 2</strong> conventions will be notify as a warning.</p>
-<p>Every verification must be report back to the creator, This can be done in any way as you wish. Such as via private messaging or <code>#📍request-review</code> channel.</p>
+<p>A datapack <strong>must</strong> follow all of <strong>Tier 3</strong> conventions to be verified, any datapack that does not follow <strong>Tier 2</strong> conventions will be notified as a warning.</p>
+<p>Every verification must report back to the creator, This can be done in any way as you wish. Such as via private messaging or <code>#📍request-review</code> channel.</p>
 <p>When the datapack is verified, you can post it to <code>#✅certified-datapacks</code> channel in the following format:</p>
 <pre><code>&lt;Datapack name&gt; by &lt;Creator name&gt;
 &lt;url to the project page&gt;
 </code></pre>
-<p>This can also be change if see fit and you need notify them that they can use the convention banner in their project page.</p>
+<p>It can also be changed if you see fit. You also need to notify them that they can use the convention banner on their project page.</p>
 <blockquote>
 <p>As of right now, I only made a page for Tier 3 conventions. The lower tier will be made later.</p>
 </blockquote>
 <h2><a class="header" href="#custom-model-id-" id="custom-model-id-">Custom Model ID (***)</a></h2>
 <blockquote>
-<p>This step can be skip if the datapack does not required resourcepack to play.</p>
+<p>This step can be skipped if the datapack does not require a resourcepack to play.</p>
 </blockquote>
 <ol>
 <li>Check the <code>ID</code> of the model and the <code>ID</code> that datapacker claim using <a href="https://mc-datapacks.web.app/custom_model_id">https://mc-datapacks.web.app</a></li>
@@ -199,7 +199,7 @@
 </blockquote>
 <p><img src="./review/incorrect_cmd_usage.png" alt="" /></p>
 <blockquote>
-<p>Wrong <code>ID</code>, this should be <code>808</code> because Boomber claim the ID of <code>808</code> not <code>82</code>.</p>
+<p>Wrong <code>ID</code>, this should be <code>808</code> because Boomber claims the ID of <code>808</code> not <code>82</code>.</p>
 </blockquote>
 <p><img src="./review/incorrect_cmd_usage_2.png" alt="" /></p>
 <blockquote>
@@ -214,18 +214,18 @@
 </blockquote>
 <h2><a class="header" href="#shulker-box-loot-table-" id="shulker-box-loot-table-">Shulker Box Loot Table (***)</a></h2>
 <blockquote>
-<p>This step can be skip if the datapack does not required Player Inventory manipulation to play.</p>
+<p>This step can be skipped if the datapack does not require Player Inventory manipulation to play.</p>
 </blockquote>
-<p>To verify this convention, simply compare the loot table inside <code>data/minecraft/loot_tables/blocks/yellow_shulker_box.json</code> with <a href="https://mc-datapacks.github.io/en/conventions/shulker_box_loot_table.html">this one</a></p>
+<p>To verify this convention, You must compare the loot table inside <code>data/minecraft/loot_tables/blocks/yellow_shulker_box.json</code> with <a href="https://mc-datapacks.github.io/en/conventions/shulker_box_loot_table.html">this loot table</a></p>
 <ul>
-<li>If the datapack use <em>other</em> shulker box for inventory manipulation they will get a warning but will still pass.</li>
-<li>If the datapack use yellow shulker box but with different loot table they will not pass this convention.</li>
+<li>If the datapack uses <em>other</em> shulker box for inventory manipulation they will get a warning but will still pass.</li>
+<li>If the datapack use yellow shulker box but with different loot table, they will not pass this convention.</li>
 </ul>
 <h2><a class="header" href="#global-ignoring-tag-" id="global-ignoring-tag-">Global Ignoring Tag (***)</a></h2>
-<p>This convention can be split into two side: Entity Selection and Entity Creation.</p>
+<p>This convention can be split into two sides: Entity Selection and Entity Creation.</p>
 <ul>
-<li>Entity Selection refer to using global ignoring tag inside entity selector such as <code>@e</code> and <code>@a</code>.</li>
-<li>Entity Creation refer to using global ignoring tag when summoning or creating an entity, such as <code>/summon</code>.</li>
+<li>Entity Selection refers to using global ignoring tag inside entity selectors such as <code>@e</code> and <code>@a</code>.</li>
+<li>Entity Creation refers to using global ignoring tag when summoning or creating an entity, such as <code>/summon</code>.</li>
 </ul>
 <ol>
 <li>Verify entity selector</li>
@@ -243,7 +243,7 @@
 </ol>
 <p><img src="./review/correct_git_usage.png" alt="" /></p>
 <blockquote>
-<p>This is a valid place to not use global ignoring tag since this is a temporary entity that is kill off rightaway.</p>
+<p>This is a valid place to not use global ignoring tag since this is a temporary entity that is killed off right away.</p>
 </blockquote>
 <p><img src="./review/correct_git_usage_2.png" alt="" /></p>
 <blockquote>
@@ -254,8 +254,8 @@
 <p>This is a &quot;chunk marker&quot; entity that shouldn't be move or kill by other datapack, so this entity <strong>must</strong> have <code>global.ignore</code>, <code>global.ignore.pos</code> and <code>global.ignore.kill</code></p>
 </blockquote>
 <h2><a class="header" href="#note" id="note">Note</a></h2>
-<p>Since Global Ignoring Tag convention is an opt-in system, if the datapacker insist that their entity shouldn't have global ignoring tag. They will still pass.
-There is no such exception in Entity Selection part, however.</p>
+<p>Since Global Ignoring Tag convention is an opt-in system if the datapacker insist that their entity shouldn't have global ignoring tag. They will still pass.
+There is no such exception in the Entity Selection part, however.</p>
 <h1><a class="header" href="#style-guideline" id="style-guideline">Style Guideline</a></h1>
 <p><strong>This page is still working in process</strong></p>
 <h1><a class="header" href="#tier-system" id="tier-system">Tier System</a></h1>
@@ -281,7 +281,7 @@ There is no such exception in Entity Selection part, however.</p>
 </ul>
 <p>This can be attached after the convention name like so: <code>Datapack Advancement (*)</code>, <code>Common Trait Convention (**)</code>, <code>Shulker Box Loot Table (***)</code></p>
 <h1><a class="header" href="#about" id="about">About</a></h1>
-<p>This section contain a list of conventions and where it is placed in the tier system.</p>
+<p>This section contains a list of conventions and where it is in the tier system.</p>
 <table><thead><tr><th>Convention</th><th>Levels</th></tr></thead><tbody>
 <tr><td><a href="https://mc-datapacks.github.io/en/conventions/datapack_advancement.html">Datapack Advancement</a></td><td>Tier 1</td></tr>
 <tr><td><a href="https://mc-datapacks.github.io/en/conventions/datapack_uninstallation.html">Datapack Uninstallation</a></td><td>Tier 1</td></tr>
@@ -291,7 +291,7 @@ There is no such exception in Entity Selection part, however.</p>
 <tr><td><a href="https://mc-datapacks.github.io/en/conventions/shulker_box_loot_table.html">Shulker Box Loot Table</a></td><td>Tier 3</td></tr>
 </tbody></table>
 <blockquote>
-<p>This <strong>must</strong> be updated whenever a change has been made to the official conventions list by any mean!</p>
+<p>This <strong>must</strong> be updated whenever a change has been made to the official conventions list by any means!</p>
 </blockquote>
 <h1><a class="header" href="#convention-banner" id="convention-banner">Convention Banner</a></h1>
 <ul>
