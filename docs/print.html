@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="review.html"><strong aria-hidden="true">1.</strong> Datapack Review</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="review_cmd.html"><strong aria-hidden="true">1.1.</strong> Custom Model ID (***)</a></li><li class="chapter-item expanded "><a href="review_shulker_loot.html"><strong aria-hidden="true">1.2.</strong> Shulker Box Loot Table (***)</a></li><li class="chapter-item expanded "><a href="review_global_ignore.html"><strong aria-hidden="true">1.3.</strong> Global Ignoring Tag (***)</a></li></ol></li><li class="chapter-item expanded "><a href="style_guideline.html"><strong aria-hidden="true">2.</strong> Style Guideline</a></li><li class="chapter-item expanded "><a href="tier.html"><strong aria-hidden="true">3.</strong> Tier System</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tier_list.html"><strong aria-hidden="true">3.1.</strong> Tier List</a></li></ol></li><li class="chapter-item expanded "><a href="convention_banner.html"><strong aria-hidden="true">4.</strong> Convention Banner</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="review.html"><strong aria-hidden="true">1.</strong> Datapack Review</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="review_cmd.html"><strong aria-hidden="true">1.1.</strong> Custom Model ID (***)</a></li><li class="chapter-item expanded "><a href="review_shulker_loot.html"><strong aria-hidden="true">1.2.</strong> Shulker Box Loot Table (***)</a></li><li class="chapter-item expanded "><a href="review_global_ignore.html"><strong aria-hidden="true">1.3.</strong> Global Ignoring Tag (***)</a></li><li class="chapter-item expanded "><a href="review_ctc.html"><strong aria-hidden="true">1.4.</strong> Common Trait (**)</a></li><li class="chapter-item expanded "><a href="review_advancement.html"><strong aria-hidden="true">1.5.</strong> Datapack Advancement (*)</a></li><li class="chapter-item expanded "><a href="review_uninstallation.html"><strong aria-hidden="true">1.6.</strong> Datapack Uninstallation (*)</a></li></ol></li><li class="chapter-item expanded "><a href="style_guideline.html"><strong aria-hidden="true">2.</strong> Style Guideline</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="style_datapack_advancement.html"><strong aria-hidden="true">2.1.</strong> Datapack Advancement</a></li><li class="chapter-item expanded "><a href="style_uninstallation.html"><strong aria-hidden="true">2.2.</strong> Datapack Uninstallation</a></li></ol></li><li class="chapter-item expanded "><a href="tier.html"><strong aria-hidden="true">3.</strong> Tier System</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tier_list.html"><strong aria-hidden="true">3.1.</strong> Tier List</a></li></ol></li><li class="chapter-item expanded "><a href="convention_banner.html"><strong aria-hidden="true">4.</strong> Convention Banner</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -177,15 +177,13 @@
 </ol>
 <h2><a class="header" href="#verifying-a-datapack" id="verifying-a-datapack">Verifying a Datapack</a></h2>
 <p>A datapack <strong>must</strong> follow all of <strong>Tier 3</strong> conventions to be verified, any datapack that does not follow <strong>Tier 2</strong> conventions will be notified as a warning.</p>
-<p>Every verification must report back to the creator, This can be done in any way as you wish. Such as via private messaging or <code>#📍request-review</code> channel.</p>
+<p>Every verification must be reported back to the creator. This can be done in any way as you wish such as via private messaging or <code>#📍request-review</code> channel.</p>
 <p>When the datapack is verified, you can post it to <code>#✅certified-datapacks</code> channel in the following format:</p>
 <pre><code>&lt;Datapack name&gt; by &lt;Creator name&gt;
 &lt;url to the project page&gt;
 </code></pre>
-<p>It can also be changed if you see fit. You also need to notify them that they can use the convention banner on their project page.</p>
-<blockquote>
-<p>As of right now, I only made a page for Tier 3 conventions. The lower tier will be made later.</p>
-</blockquote>
+<p>It can also be changed if you see fit.</p>
+<p>You also need to notify them that they can use the convention banner on their project page.</p>
 <h2><a class="header" href="#custom-model-id-" id="custom-model-id-">Custom Model ID (***)</a></h2>
 <blockquote>
 <p>This step can be skipped if the datapack does not require a resourcepack to play.</p>
@@ -256,8 +254,152 @@
 <h2><a class="header" href="#note" id="note">Note</a></h2>
 <p>Since Global Ignoring Tag convention is an opt-in system if the datapacker insist that their entity shouldn't have global ignoring tag. They will still pass.
 There is no such exception in the Entity Selection part, however.</p>
+<h1><a class="header" href="#common-trait-convention-" id="common-trait-convention-">Common Trait Convention (**)</a></h1>
+<p>This page is working in progress.</p>
+<blockquote>
+<p>Because this is Tier 2 convention, you can skip this section for now until this is finished.</p>
+</blockquote>
+<h1><a class="header" href="#datapack-advancement-" id="datapack-advancement-">Datapack Advancement (*)</a></h1>
+<blockquote>
+<p>This is part of the <a href="./style_guideline.html">Style Guideline</a>, Failing to follow this will not affect the verification process.</p>
+</blockquote>
+<ol>
+<li>
+<p>Compare the content of the file <code>/data/global/advancements/root.json</code> with <a href="./style_datapack_advancement.html#1-root-advancement">this one</a>.<br />
+If it isn't the same then they have failed to follow this properly.</p>
+</li>
+<li>
+<p>Determine whether this datapack uses the normal syntax or the standalone datapack syntax.</p>
+<ol>
+<li>If use normal syntax, check where the <a href="./style_datapack_advancement.html#3-datapack-advancement">Datapack Node</a> file is.<br />
+if it's inside <code>/data/global/advancements/</code> directory, They have failed to follow this properly.</li>
+<li>If use standalone datapack syntax, check where the <a href="./style_datapack_advancement.html#3-datapack-advancement">Datapack Node</a> file is.<br />
+if it's <strong>not</strong> inside <code>/data/global/advancements/standalone</code> directory, They have failed to follow this properly.</li>
+</ol>
+</li>
+<li>
+<p>Check <a href="./style_datapack_advancement.html#2-namespace-advancement">Namespace Node</a> file. This file <strong>must</strong> contain information about the creator of the datapack only. Any information besides that (i.e. datapack name) will mean they have failed to follow this properly.</p>
+</li>
+</ol>
+<h1><a class="header" href="#datapack-uninstallation-" id="datapack-uninstallation-">Datapack Uninstallation (*)</a></h1>
+<blockquote>
+<p>This is part of the <a href="./style_guideline.html">Style Guideline</a>, Failing to follow this will not affect the verification process.</p>
+</blockquote>
+<ol>
+<li>Check the project page of this datapack to see if the creator has specified any way to uninstall this datapack.</li>
+<li>Check that the provided uninstallation guide works inside the datapack.</li>
+</ol>
 <h1><a class="header" href="#style-guideline" id="style-guideline">Style Guideline</a></h1>
-<p><strong>This page is still working in process</strong></p>
+<p>This section contains information about The Official Style Guideline.</p>
+<h2><a class="header" href="#about" id="about">About</a></h2>
+<p>Style Guideline is a simple and intuitive design that datapack can follow to improve user experience. The guideline will be used alongside The Official Conventions.</p>
+<p>If you properly followed the Style Guideline you will be able to use this banner to indicate that your datapack is user-friendly and easy to use.</p>
+<p><img src="https://i.imgur.com/ltLPoQp.png" alt="" /></p>
+<h2><a class="header" href="#content" id="content">Content</a></h2>
+<ol>
+<li><a href="./style_datapack_advancement.html">Datapack Advancement</a></li>
+<li><a href="./style_uninstallation.html">Datapack Uninstallation</a></li>
+</ol>
+<h1><a class="header" href="#datapack-advancement" id="datapack-advancement">Datapack Advancement</a></h1>
+<p>You should rely on this guideline instead of spamming the installation message onto the chat which can be annoying for users when installing multiple datapacks.</p>
+<h2><a class="header" href="#about-1" id="about-1">About</a></h2>
+<p>This guideline aims to generalize the installation message into an easily viewable and non-obstructive way by putting it on a single advancement page.</p>
+<h2><a class="header" href="#preview" id="preview">Preview</a></h2>
+<p>This is an example of what this guideline will look like</p>
+<p><img src="./style/advancement.png" alt="" /></p>
+<h2><a class="header" href="#implementation" id="implementation">Implementation</a></h2>
+<p>The guideline is made up of 3 advancement nodes: <code>Root</code>, <code>Namespace</code> and <code>Datapack</code></p>
+<h2><a class="header" href="#1-root-advancement" id="1-root-advancement">1. Root Advancement</a></h2>
+<p>This advancement is the root of all installed datapack's advancements.</p>
+<p><img src="./style/advancement-root.png" alt="" /></p>
+<p>You <strong>must</strong> create this file at <code>/data/global/advancements/root.json</code>.</p>
+<pre><code class="language-json">{
+    &quot;display&quot;: {
+        &quot;title&quot;: &quot;Installed Datapacks&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;icon&quot;: {
+            &quot;item&quot;: &quot;minecraft:knowledge_book&quot;
+        },
+        &quot;background&quot;: &quot;minecraft:textures/block/gray_concrete.png&quot;,
+        &quot;show_toast&quot;: false,
+        &quot;announce_to_chat&quot;: false
+    },
+    &quot;criteria&quot;: {
+        &quot;trigger&quot;: {
+            &quot;trigger&quot;: &quot;minecraft:tick&quot;
+        }
+    }
+}
+</code></pre>
+<h2><a class="header" href="#2-namespace-advancement" id="2-namespace-advancement">2. Namespace Advancement</a></h2>
+<p>This advancement indicates the creator of the datapack.</p>
+<p><img src="./style/advancement-namespace.png" alt="" /></p>
+<p>It <strong>must</strong> be in the same location in every datapacks of yours. I recommend that you put it inside <code>/data/global/advancements/&lt;namespace&gt;.json</code>.</p>
+<pre><code class="language-json">{
+    &quot;display&quot;: {
+        &quot;title&quot;: &quot;&lt;Your name&gt;&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;icon&quot;: {
+            &quot;item&quot;: &quot;minecraft:player_head&quot;,
+            &quot;nbt&quot;: &quot;{SkullOwner: '&lt;your_minecraft_name&gt;'}&quot;
+        },
+        &quot;show_toast&quot;: false,
+        &quot;announce_to_chat&quot;: false
+    },
+    &quot;parent&quot;: &quot;global:root&quot;,
+    &quot;criteria&quot;: {
+        &quot;trigger&quot;: {
+            &quot;trigger&quot;: &quot;minecraft:tick&quot;
+        }
+    }
+}
+</code></pre>
+<blockquote>
+<p><strong>Note</strong><br />
+If you are working on a project with multiple people you can choose to:</p>
+<ul>
+<li>Display this advancement as your own and credit them with other methods.</li>
+<li>Display this advancement with the &quot;team name&quot; of your choice.</li>
+<li>Display a &quot;<a href="style_datapack_advancement.html#extra-standalone-datapack">Standalone Datapack</a>&quot; instead.</li>
+</ul>
+</blockquote>
+<h2><a class="header" href="#3-datapack-advancement" id="3-datapack-advancement">3. Datapack Advancement</a></h2>
+<p>This advancement is used to display installation information about your datapack. It should be unique among your other datapacks.</p>
+<p><img src="./style/advancement-datapack.png" alt="" /></p>
+<p>You can create this advancement anywhere as long as you <strong>don't</strong> pollute <code>/data/global/advancements/folder</code></p>
+<pre><code class="language-json">{
+    &quot;display&quot;: {
+        &quot;title&quot;: &quot;&lt;datapack name&gt;&quot;,
+        &quot;description&quot;: &quot;&lt;datapack description&gt;&quot;,
+        &quot;icon&quot;: {
+            &quot;item&quot;: &quot;&lt;item&gt;&quot;
+        },
+        &quot;announce_to_chat&quot;: false,
+        &quot;show_toast&quot;: false
+    },
+    &quot;parent&quot;: &quot;global:&lt;namespace&gt;&quot;,
+    &quot;criteria&quot;: {
+        &quot;trigger&quot;: {
+            &quot;trigger&quot;: &quot;minecraft:tick&quot;
+        }
+    }
+}
+</code></pre>
+<h2><a class="header" href="#note-1" id="note-1">Note</a></h2>
+<p>The syntax <code>&lt;...&gt;</code> indicates that you have to replace it with something else!</p>
+<h2><a class="header" href="#extra-standalone-datapack" id="extra-standalone-datapack">Extra: Standalone Datapack</a></h2>
+<p>This is an optional syntax that you can take to display installed datapack <em>without</em> displaying the creator's information.</p>
+<p>To implement this you simply skip the <a href="style_datapack_advancement.html#2-namespace-advancement">#2: Namespace Advancement</a> step and make sure that in step <a href="style_datapack_advancement.html#3-datapack-advancement">#3: Datapack Advancement</a> you create your file inside <code>/data/global/advancements/standalone/</code> directory.</p>
+<blockquote>
+<p>Keep in mind that if you are planning to release more datapacks under this name. You should use the normal syntax over this one.</p>
+</blockquote>
+<h1><a class="header" href="#datapack-uninstallation" id="datapack-uninstallation">Datapack Uninstallation</a></h1>
+<h2><a class="header" href="#about-2" id="about-2">About</a></h2>
+<p>This guideline ensures that you have a way of uninstalling <em>most</em> of the contents of your datapack. The word &quot;most&quot; is used here because minecraft does not provide the necessary tool for us to actually uninstall or remove the entirety of datapack.</p>
+<h2><a class="header" href="#implementation-1" id="implementation-1">Implementation</a></h2>
+<p>There are no rules enforcing how you should implement the uninstallation method as long as you did implement it. But the following section is one of the many ways to implement it.</p>
+<h3><a class="header" href="#uninstallation-function" id="uninstallation-function">Uninstallation Function</a></h3>
+<p>You can create an &quot;uninstallation function&quot;, which when ran, will remove most of the content added from your datapack. You can tell the user about this function inside your project page or anywhere you like.</p>
 <h1><a class="header" href="#tier-system" id="tier-system">Tier System</a></h1>
 <p>Each convention has a varying degree of importance, this system is put in place to categorized the importance of each convention.</p>
 <table><thead><tr><th>Levels</th><th>About</th></tr></thead><tbody>
@@ -280,7 +422,7 @@ There is no such exception in the Entity Selection part, however.</p>
 <li>Tier 3 -&gt; <code>***</code></li>
 </ul>
 <p>This can be attached after the convention name like so: <code>Datapack Advancement (*)</code>, <code>Common Trait Convention (**)</code>, <code>Shulker Box Loot Table (***)</code></p>
-<h1><a class="header" href="#about" id="about">About</a></h1>
+<h1><a class="header" href="#about-3" id="about-3">About</a></h1>
 <p>This section contains a list of conventions and where it is in the tier system.</p>
 <table><thead><tr><th>Convention</th><th>Levels</th></tr></thead><tbody>
 <tr><td><a href="https://mc-datapacks.github.io/en/conventions/datapack_advancement.html">Datapack Advancement</a></td><td>Tier 1</td></tr>

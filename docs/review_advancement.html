@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Convention Banner - Staff Guideline</title>
+        <title>Datapack Advancement (*) - Staff Guideline</title>
         
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -81,7 +81,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="review.html"><strong aria-hidden="true">1.</strong> Datapack Review</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="review_cmd.html"><strong aria-hidden="true">1.1.</strong> Custom Model ID (***)</a></li><li class="chapter-item expanded "><a href="review_shulker_loot.html"><strong aria-hidden="true">1.2.</strong> Shulker Box Loot Table (***)</a></li><li class="chapter-item expanded "><a href="review_global_ignore.html"><strong aria-hidden="true">1.3.</strong> Global Ignoring Tag (***)</a></li><li class="chapter-item expanded "><a href="review_ctc.html"><strong aria-hidden="true">1.4.</strong> Common Trait (**)</a></li><li class="chapter-item expanded "><a href="review_advancement.html"><strong aria-hidden="true">1.5.</strong> Datapack Advancement (*)</a></li><li class="chapter-item expanded "><a href="review_uninstallation.html"><strong aria-hidden="true">1.6.</strong> Datapack Uninstallation (*)</a></li></ol></li><li class="chapter-item expanded "><a href="style_guideline.html"><strong aria-hidden="true">2.</strong> Style Guideline</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="style_datapack_advancement.html"><strong aria-hidden="true">2.1.</strong> Datapack Advancement</a></li><li class="chapter-item expanded "><a href="style_uninstallation.html"><strong aria-hidden="true">2.2.</strong> Datapack Uninstallation</a></li></ol></li><li class="chapter-item expanded "><a href="tier.html"><strong aria-hidden="true">3.</strong> Tier System</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tier_list.html"><strong aria-hidden="true">3.1.</strong> Tier List</a></li></ol></li><li class="chapter-item expanded "><a href="convention_banner.html" class="active"><strong aria-hidden="true">4.</strong> Convention Banner</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="review.html"><strong aria-hidden="true">1.</strong> Datapack Review</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="review_cmd.html"><strong aria-hidden="true">1.1.</strong> Custom Model ID (***)</a></li><li class="chapter-item expanded "><a href="review_shulker_loot.html"><strong aria-hidden="true">1.2.</strong> Shulker Box Loot Table (***)</a></li><li class="chapter-item expanded "><a href="review_global_ignore.html"><strong aria-hidden="true">1.3.</strong> Global Ignoring Tag (***)</a></li><li class="chapter-item expanded "><a href="review_ctc.html"><strong aria-hidden="true">1.4.</strong> Common Trait (**)</a></li><li class="chapter-item expanded "><a href="review_advancement.html" class="active"><strong aria-hidden="true">1.5.</strong> Datapack Advancement (*)</a></li><li class="chapter-item expanded "><a href="review_uninstallation.html"><strong aria-hidden="true">1.6.</strong> Datapack Uninstallation (*)</a></li></ol></li><li class="chapter-item expanded "><a href="style_guideline.html"><strong aria-hidden="true">2.</strong> Style Guideline</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="style_datapack_advancement.html"><strong aria-hidden="true">2.1.</strong> Datapack Advancement</a></li><li class="chapter-item expanded "><a href="style_uninstallation.html"><strong aria-hidden="true">2.2.</strong> Datapack Uninstallation</a></li></ol></li><li class="chapter-item expanded "><a href="tier.html"><strong aria-hidden="true">3.</strong> Tier System</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tier_list.html"><strong aria-hidden="true">3.1.</strong> Tier List</a></li></ol></li><li class="chapter-item expanded "><a href="convention_banner.html"><strong aria-hidden="true">4.</strong> Convention Banner</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -147,28 +147,43 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#convention-banner" id="convention-banner">Convention Banner</a></h1>
-<ul>
+                        <h1><a class="header" href="#datapack-advancement-" id="datapack-advancement-">Datapack Advancement (*)</a></h1>
+<blockquote>
+<p>This is part of the <a href="./style_guideline.html">Style Guideline</a>, Failing to follow this will not affect the verification process.</p>
+</blockquote>
+<ol>
 <li>
-<p>Datapack that has followed a bare metal <strong>Tier 3</strong> conventions are allowed to use this banner
-<img src="https://i.imgur.com/4Z0ioH5.png" alt="" /></p>
+<p>Compare the content of the file <code>/data/global/advancements/root.json</code> with <a href="./style_datapack_advancement.html#1-root-advancement">this one</a>.<br />
+If it isn't the same then they have failed to follow this properly.</p>
 </li>
 <li>
-<p>Datapack that has followed <strong>Tier 3</strong> conventions and various style-related conventions defined in the <a href="./style_guideline.html">Style Guideline</a> section can use this banner.
-<img src="https://i.imgur.com/ltLPoQp.png" alt="" /></p>
+<p>Determine whether this datapack uses the normal syntax or the standalone datapack syntax.</p>
+<ol>
+<li>If use normal syntax, check where the <a href="./style_datapack_advancement.html#3-datapack-advancement">Datapack Node</a> file is.<br />
+if it's inside <code>/data/global/advancements/</code> directory, They have failed to follow this properly.</li>
+<li>If use standalone datapack syntax, check where the <a href="./style_datapack_advancement.html#3-datapack-advancement">Datapack Node</a> file is.<br />
+if it's <strong>not</strong> inside <code>/data/global/advancements/standalone</code> directory, They have failed to follow this properly.</li>
+</ol>
 </li>
-</ul>
+<li>
+<p>Check <a href="./style_datapack_advancement.html#2-namespace-advancement">Namespace Node</a> file. This file <strong>must</strong> contain information about the creator of the datapack only. Any information besides that (i.e. datapack name) will mean they have failed to follow this properly.</p>
+</li>
+</ol>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                            <a rel="prev" href="tier_list.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="review_ctc.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
 
+                        
+                            <a rel="next" href="review_uninstallation.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
                         
 
                         <div style="clear: both"></div>
@@ -178,11 +193,15 @@
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                    <a rel="prev" href="tier_list.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="review_ctc.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
 
+                
+                    <a rel="next" href="review_uninstallation.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
                 
             </nav>
 
