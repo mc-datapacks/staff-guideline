@@ -4,6 +4,7 @@
 	- [Custom Model ID (***)](./review_cmd.md)
 	- [Shulker Box Loot Table (***)](./review_shulker_loot.md)
 	- [Global Ignoring Tag (***)](./review_global_ignore.md)
+	- [Namespace (**)](./review_namespace.md)
 	- [Common Trait (**)](./review_ctc.md)
 	- [Datapack Advancement (*)](./review_advancement.md)
 	- [Datapack Uninstallation (*)](./review_uninstallation.md)

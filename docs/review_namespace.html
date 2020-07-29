@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Datapack Review - Staff Guideline</title>
+        <title>Namespace (**) - Staff Guideline</title>
         
         
 
@@ -89,7 +89,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="review.html"><strong aria-hidden="true">1.</strong> Datapack Review</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="review_cmd.html"><strong aria-hidden="true">1.1.</strong> Custom Model ID (***)</a></li><li class="chapter-item expanded "><a href="review_shulker_loot.html"><strong aria-hidden="true">1.2.</strong> Shulker Box Loot Table (***)</a></li><li class="chapter-item expanded "><a href="review_global_ignore.html"><strong aria-hidden="true">1.3.</strong> Global Ignoring Tag (***)</a></li><li class="chapter-item expanded "><a href="review_namespace.html"><strong aria-hidden="true">1.4.</strong> Namespace (**)</a></li><li class="chapter-item expanded "><a href="review_ctc.html"><strong aria-hidden="true">1.5.</strong> Common Trait (**)</a></li><li class="chapter-item expanded "><a href="review_advancement.html"><strong aria-hidden="true">1.6.</strong> Datapack Advancement (*)</a></li><li class="chapter-item expanded "><a href="review_uninstallation.html"><strong aria-hidden="true">1.7.</strong> Datapack Uninstallation (*)</a></li></ol></li><li class="chapter-item expanded "><a href="style_guideline.html"><strong aria-hidden="true">2.</strong> Style Guideline</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="style_datapack_advancement.html"><strong aria-hidden="true">2.1.</strong> Datapack Advancement</a></li><li class="chapter-item expanded "><a href="style_uninstallation.html"><strong aria-hidden="true">2.2.</strong> Datapack Uninstallation</a></li></ol></li><li class="chapter-item expanded "><a href="tier.html"><strong aria-hidden="true">3.</strong> Tier System</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tier_list.html"><strong aria-hidden="true">3.1.</strong> Tier List</a></li></ol></li><li class="chapter-item expanded "><a href="convention_banner.html"><strong aria-hidden="true">4.</strong> Convention Banner</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="review.html"><strong aria-hidden="true">1.</strong> Datapack Review</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="review_cmd.html"><strong aria-hidden="true">1.1.</strong> Custom Model ID (***)</a></li><li class="chapter-item expanded "><a href="review_shulker_loot.html"><strong aria-hidden="true">1.2.</strong> Shulker Box Loot Table (***)</a></li><li class="chapter-item expanded "><a href="review_global_ignore.html"><strong aria-hidden="true">1.3.</strong> Global Ignoring Tag (***)</a></li><li class="chapter-item expanded "><a href="review_namespace.html" class="active"><strong aria-hidden="true">1.4.</strong> Namespace (**)</a></li><li class="chapter-item expanded "><a href="review_ctc.html"><strong aria-hidden="true">1.5.</strong> Common Trait (**)</a></li><li class="chapter-item expanded "><a href="review_advancement.html"><strong aria-hidden="true">1.6.</strong> Datapack Advancement (*)</a></li><li class="chapter-item expanded "><a href="review_uninstallation.html"><strong aria-hidden="true">1.7.</strong> Datapack Uninstallation (*)</a></li></ol></li><li class="chapter-item expanded "><a href="style_guideline.html"><strong aria-hidden="true">2.</strong> Style Guideline</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="style_datapack_advancement.html"><strong aria-hidden="true">2.1.</strong> Datapack Advancement</a></li><li class="chapter-item expanded "><a href="style_uninstallation.html"><strong aria-hidden="true">2.2.</strong> Datapack Uninstallation</a></li></ol></li><li class="chapter-item expanded "><a href="tier.html"><strong aria-hidden="true">3.</strong> Tier System</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tier_list.html"><strong aria-hidden="true">3.1.</strong> Tier List</a></li></ol></li><li class="chapter-item expanded "><a href="convention_banner.html"><strong aria-hidden="true">4.</strong> Convention Banner</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -155,50 +155,21 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#datapack-review" id="datapack-review">Datapack Review</a></h1>
-<p>This section contains information about how to properly verify a datapack inside <code>#📍request-review</code> channel.</p>
-<h2><a class="header" href="#tooling" id="tooling">Tooling</a></h2>
-<p>Although this step is not required, this tooling is recommended by me for its convenience with verifying datapack.</p>
-<ol>
-<li>Install <a href="https://code.visualstudio.com/">VS Code</a> or <a href="https://vscodium.com/">VS Codium</a></li>
-<li>Install the following extensions.
-<ol>
-<li><a href="https://marketplace.visualstudio.com/items?itemName=SPGoding.datapack-language-server">Datapack Helper Plus (MCF)</a>
-<ul>
-<li>This extension provides a syntax highlighting and various helper functionality to navigate through datapack.</li>
-</ul>
-</li>
-<li><a href="https://marketplace.visualstudio.com/items?itemName=SPGoding.datapack-json">Datapack Helper Plus (JSON)</a>
-<ul>
-<li>This extension provide similar functionality to <code>MCF</code> but for JSON files.</li>
-</ul>
-</li>
-<li><a href="https://marketplace.visualstudio.com/items?itemName=actuallyboomber.tellraw-preview">tellraw preview</a>
-<ul>
-<li>This extension provides text preview for commands that display a message to the player.</li>
-</ul>
-</li>
-</ol>
-</li>
-</ol>
-<h2><a class="header" href="#verifying-a-datapack" id="verifying-a-datapack">Verifying a Datapack</a></h2>
-<p>A datapack <strong>must</strong> follow all of <strong>Tier 3</strong> conventions to be verified, any datapack that does not follow <strong>Tier 2</strong> conventions will be notified as a warning.</p>
-<p>Every verification must be reported back to the creator. This can be done in any way as you wish such as via private messaging or <code>#📍request-review</code> channel.</p>
-<p>When the datapack is verified, you can post it to <code>#✅certified-datapacks</code> channel in the following format:</p>
-<pre><code>&lt;Datapack name&gt; by &lt;Creator name&gt;
-&lt;url to the project page&gt;
-</code></pre>
-<p>It can also be changed if you see fit.</p>
-<p>You also need to notify them that they can use the convention banner on their project page.</p>
+                        <h1><a class="header" href="#namespace-convention-" id="namespace-convention-">Namespace Convention (**)</a></h1>
+<p>I'm sure you guys already know what a namespace is but you should still read <a href="https://mc-datapacks.github.io/en/conventions/namespace.html">Namespace Convention</a> page to understand the specification of our namespace.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
+                            <a rel="prev" href="review_global_ignore.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
 
                         
-                            <a rel="next" href="review_cmd.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="review_ctc.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -210,9 +181,13 @@
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
+                    <a rel="prev" href="review_global_ignore.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
 
                 
-                    <a rel="next" href="review_cmd.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="review_ctc.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 
