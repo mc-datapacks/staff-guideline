@@ -6,4 +6,4 @@ src = "src"
 title = "Staff Guideline"
 
 [build]
-build-dir = "docs"
+build-dir = "build"
