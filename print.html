@@ -1,0 +1,521 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Staff Guideline</title>
+        
+        <meta name="robots" content="noindex" />
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="review.html"><strong aria-hidden="true">1.</strong> Datapack Review</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="review_cmd.html"><strong aria-hidden="true">1.1.</strong> Custom Model ID (***)</a></li><li class="chapter-item expanded "><a href="review_shulker_loot.html"><strong aria-hidden="true">1.2.</strong> Shulker Box Loot Table (***)</a></li><li class="chapter-item expanded "><a href="review_global_ignore.html"><strong aria-hidden="true">1.3.</strong> Global Ignoring Tag (***)</a></li><li class="chapter-item expanded "><a href="review_namespace.html"><strong aria-hidden="true">1.4.</strong> Namespace (**)</a></li><li class="chapter-item expanded "><a href="review_ctc.html"><strong aria-hidden="true">1.5.</strong> Common Trait (**)</a></li><li class="chapter-item expanded "><a href="review_advancement.html"><strong aria-hidden="true">1.6.</strong> Datapack Advancement (*)</a></li><li class="chapter-item expanded "><a href="review_uninstallation.html"><strong aria-hidden="true">1.7.</strong> Datapack Uninstallation (*)</a></li></ol></li><li class="chapter-item expanded "><a href="style_guideline.html"><strong aria-hidden="true">2.</strong> Style Guideline</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="style_datapack_advancement.html"><strong aria-hidden="true">2.1.</strong> Datapack Advancement</a></li><li class="chapter-item expanded "><a href="style_uninstallation.html"><strong aria-hidden="true">2.2.</strong> Datapack Uninstallation</a></li></ol></li><li class="chapter-item expanded "><a href="tier.html"><strong aria-hidden="true">3.</strong> Tier System</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tier_list.html"><strong aria-hidden="true">3.1.</strong> Tier List</a></li></ol></li><li class="chapter-item expanded "><a href="convention_banner.html"><strong aria-hidden="true">4.</strong> Convention Banner</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Staff Guideline</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#datapack-review" id="datapack-review">Datapack Review</a></h1>
+<p>This section contains information about how to properly verify a datapack inside <code>#📍request-review</code> channel.</p>
+<h2><a class="header" href="#tooling" id="tooling">Tooling</a></h2>
+<p>Although this step is not required, this tooling is recommended by me for its convenience with verifying datapack.</p>
+<ol>
+<li>Install <a href="https://code.visualstudio.com/">VS Code</a> or <a href="https://vscodium.com/">VS Codium</a></li>
+<li>Install the following extensions.
+<ol>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=SPGoding.datapack-language-server">Datapack Helper Plus (MCF)</a>
+<ul>
+<li>This extension provides a syntax highlighting and various helper functionality to navigate through datapack.</li>
+</ul>
+</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=SPGoding.datapack-json">Datapack Helper Plus (JSON)</a>
+<ul>
+<li>This extension provide similar functionality to <code>MCF</code> but for JSON files.</li>
+</ul>
+</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=actuallyboomber.tellraw-preview">tellraw preview</a>
+<ul>
+<li>This extension provides text preview for commands that display a message to the player.</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<h2><a class="header" href="#verifying-a-datapack" id="verifying-a-datapack">Verifying a Datapack</a></h2>
+<p>A datapack <strong>must</strong> follow all of <strong>Tier 3</strong> conventions to be verified, any datapack that does not follow <strong>Tier 2</strong> conventions will be notified as a warning.</p>
+<p>Every verification must be reported back to the creator. This can be done in any way as you wish such as via private messaging or <code>#📍request-review</code> channel.</p>
+<p>When the datapack is verified, you can post it to <code>#✅certified-datapacks</code> channel in the following format:</p>
+<pre><code>&lt;Datapack name&gt; by &lt;Creator name&gt;
+&lt;url to the project page&gt;
+</code></pre>
+<p>It can also be changed if you see fit.</p>
+<p>You also need to notify them that they can use the convention banner on their project page.</p>
+<h2><a class="header" href="#custom-model-id-" id="custom-model-id-">Custom Model ID (***)</a></h2>
+<blockquote>
+<p>This step can be skipped if the datapack does not require a resourcepack to play.</p>
+</blockquote>
+<ol>
+<li>Check the <code>ID</code> of the model and the <code>ID</code> that datapacker claim using <a href="https://mc-datapacks.web.app/custom_model_id">https://mc-datapacks.web.app</a></li>
+</ol>
+<p><img src="./review/correct_cmd_usage.png" alt="" /></p>
+<blockquote>
+<p>This passed because the correct ID is used and it followed the convention correctly.</p>
+</blockquote>
+<p><img src="./review/incorrect_cmd_usage.png" alt="" /></p>
+<blockquote>
+<p>Wrong <code>ID</code>, this should be <code>808</code> because Boomber claims the ID of <code>808</code> not <code>82</code>.</p>
+</blockquote>
+<p><img src="./review/incorrect_cmd_usage_2.png" alt="" /></p>
+<blockquote>
+<p>There was no attempt at following the convention here at all.</p>
+</blockquote>
+<ol start="2">
+<li>Check for consistency of the ID with the datapack.</li>
+</ol>
+<p><img src="./review/inconsistent_cmd_usage.png" alt="" /></p>
+<blockquote>
+<p>The datapack use the ID of <code>1</code> while the resourcepack use the ID of <code>808</code></p>
+</blockquote>
+<h2><a class="header" href="#shulker-box-loot-table-" id="shulker-box-loot-table-">Shulker Box Loot Table (***)</a></h2>
+<blockquote>
+<p>This step can be skipped if the datapack does not require Player Inventory manipulation to play.</p>
+</blockquote>
+<p>To verify this convention, You must compare the loot table inside <code>data/minecraft/loot_tables/blocks/yellow_shulker_box.json</code> with <a href="https://mc-datapacks.github.io/en/conventions/shulker_box_loot_table.html">this loot table</a></p>
+<ul>
+<li>If the datapack uses <em>other</em> shulker box for inventory manipulation they will get a warning but will still pass.</li>
+<li>If the datapack use yellow shulker box but with different loot table, they will not pass this convention.</li>
+</ul>
+<h2><a class="header" href="#global-ignoring-tag-" id="global-ignoring-tag-">Global Ignoring Tag (***)</a></h2>
+<p>This convention can be split into two sides: Entity Selection and Entity Creation.</p>
+<ul>
+<li>Entity Selection refers to using global ignoring tag inside entity selectors such as <code>@e</code> and <code>@a</code>.</li>
+<li>Entity Creation refers to using global ignoring tag when summoning or creating an entity, such as <code>/summon</code>.</li>
+</ul>
+<ol>
+<li>Verify entity selector</li>
+</ol>
+<p><img src="./review/incorrect_git_usage.png" alt="" /></p>
+<blockquote>
+<p>This function did not take <code>global.ignore</code> tag into account when querying for these entities.</p>
+</blockquote>
+<p><img src="./review/incorrect_git_usage_2.png" alt="" /></p>
+<blockquote>
+<p>Player (<code>@a</code>) is still affected by global ignoring tag and this should ignore <code>global.ignore</code> tag properly.</p>
+</blockquote>
+<ol start="2">
+<li>Verify entity creation</li>
+</ol>
+<p><img src="./review/correct_git_usage.png" alt="" /></p>
+<blockquote>
+<p>This is a valid place to not use global ignoring tag since this is a temporary entity that is killed off right away.</p>
+</blockquote>
+<p><img src="./review/correct_git_usage_2.png" alt="" /></p>
+<blockquote>
+<p>This is a valid place to not use global ignoring tag since this is a custom mob entity that <em>should</em> be able to be manipulated by other datapacks. Such as receiving damage or being push away.</p>
+</blockquote>
+<p><img src="./review/correct_git_usage_3.png" alt="" /></p>
+<blockquote>
+<p>This is a &quot;chunk marker&quot; entity that shouldn't be move or kill by other datapack, so this entity <strong>must</strong> have <code>global.ignore</code>, <code>global.ignore.pos</code> and <code>global.ignore.kill</code></p>
+</blockquote>
+<h2><a class="header" href="#note" id="note">Note</a></h2>
+<p>Since Global Ignoring Tag convention is an opt-in system if the datapacker insist that their entity shouldn't have global ignoring tag. They will still pass.
+There is no such exception in the Entity Selection part, however.</p>
+<h1><a class="header" href="#namespace-convention-" id="namespace-convention-">Namespace Convention (**)</a></h1>
+<p>I'm sure you guys already know what a namespace is but you should still read <a href="https://mc-datapacks.github.io/en/conventions/namespace.html">Namespace Convention</a> page to understand the specification of our namespace.</p>
+<h1><a class="header" href="#common-trait-convention-" id="common-trait-convention-">Common Trait Convention (**)</a></h1>
+<p>This page is working in progress.</p>
+<blockquote>
+<p>Because this is Tier 2 convention, you can skip this section for now until this is finished.</p>
+</blockquote>
+<h1><a class="header" href="#datapack-advancement-" id="datapack-advancement-">Datapack Advancement (*)</a></h1>
+<blockquote>
+<p>This is part of the <a href="./style_guideline.html">Style Guideline</a>, Failing to follow this will not affect the verification process.</p>
+</blockquote>
+<ol>
+<li>
+<p>Compare the content of the file <code>/data/global/advancements/root.json</code> with <a href="./style_datapack_advancement.html#1-root-advancement">this one</a>.<br />
+If it isn't the same then they have failed to follow this properly.</p>
+</li>
+<li>
+<p>Determine whether this datapack uses the normal syntax or the standalone datapack syntax.</p>
+<ol>
+<li>If use normal syntax, check where the <a href="./style_datapack_advancement.html#3-datapack-advancement">Datapack Node</a> file is.<br />
+if it's inside <code>/data/global/advancements/</code> directory, They have failed to follow this properly.</li>
+<li>If use standalone datapack syntax, check where the <a href="./style_datapack_advancement.html#3-datapack-advancement">Datapack Node</a> file is.<br />
+if it's <strong>not</strong> inside <code>/data/global/advancements/standalone</code> directory, They have failed to follow this properly.</li>
+</ol>
+</li>
+<li>
+<p>Check <a href="./style_datapack_advancement.html#2-namespace-advancement">Namespace Node</a> file. This file <strong>must</strong> contain information about the creator of the datapack only. Any information besides that (i.e. datapack name) will mean they have failed to follow this properly.</p>
+</li>
+</ol>
+<h1><a class="header" href="#datapack-uninstallation-" id="datapack-uninstallation-">Datapack Uninstallation (*)</a></h1>
+<blockquote>
+<p>This is part of the <a href="./style_guideline.html">Style Guideline</a>, Failing to follow this will not affect the verification process.</p>
+</blockquote>
+<ol>
+<li>Check the project page of this datapack to see if the creator has specified any way to uninstall this datapack.</li>
+<li>Check that the provided uninstallation guide works inside the datapack.</li>
+</ol>
+<h1><a class="header" href="#style-guideline" id="style-guideline">Style Guideline</a></h1>
+<p>This section contains information about The Official Style Guideline.</p>
+<h2><a class="header" href="#about" id="about">About</a></h2>
+<p>Style Guideline is a simple and intuitive design that datapack can follow to improve user experience. The guideline will be used alongside The Official Conventions.</p>
+<p>If you properly followed the Style Guideline you will be able to use this banner to indicate that your datapack is user-friendly and easy to use.</p>
+<p><img src="https://i.imgur.com/ltLPoQp.png" alt="" /></p>
+<h2><a class="header" href="#content" id="content">Content</a></h2>
+<ol>
+<li><a href="./style_datapack_advancement.html">Datapack Advancement</a></li>
+<li><a href="./style_uninstallation.html">Datapack Uninstallation</a></li>
+</ol>
+<h1><a class="header" href="#datapack-advancement" id="datapack-advancement">Datapack Advancement</a></h1>
+<p>You should rely on this guideline instead of spamming the installation message onto the chat which can be annoying for users when installing multiple datapacks.</p>
+<h2><a class="header" href="#about-1" id="about-1">About</a></h2>
+<p>This guideline aims to generalize the installation message into an easily viewable and non-obstructive way by putting it on a single advancement page.</p>
+<h2><a class="header" href="#preview" id="preview">Preview</a></h2>
+<p>This is an example of what this guideline will look like</p>
+<p><img src="./style/advancement.png" alt="" /></p>
+<h2><a class="header" href="#implementation" id="implementation">Implementation</a></h2>
+<p>The guideline is made up of 3 advancement nodes: <code>Root</code>, <code>Namespace</code> and <code>Datapack</code></p>
+<h2><a class="header" href="#1-root-advancement" id="1-root-advancement">1. Root Advancement</a></h2>
+<p>This advancement is the root of all installed datapack's advancements.</p>
+<p><img src="./style/advancement-root.png" alt="" /></p>
+<p>You <strong>must</strong> create this file at <code>/data/global/advancements/root.json</code>.</p>
+<pre><code class="language-json">{
+    &quot;display&quot;: {
+        &quot;title&quot;: &quot;Installed Datapacks&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;icon&quot;: {
+            &quot;item&quot;: &quot;minecraft:knowledge_book&quot;
+        },
+        &quot;background&quot;: &quot;minecraft:textures/block/gray_concrete.png&quot;,
+        &quot;show_toast&quot;: false,
+        &quot;announce_to_chat&quot;: false
+    },
+    &quot;criteria&quot;: {
+        &quot;trigger&quot;: {
+            &quot;trigger&quot;: &quot;minecraft:tick&quot;
+        }
+    }
+}
+</code></pre>
+<h2><a class="header" href="#2-namespace-advancement" id="2-namespace-advancement">2. Namespace Advancement</a></h2>
+<p>This advancement indicates the creator of the datapack.</p>
+<p><img src="./style/advancement-namespace.png" alt="" /></p>
+<p>It <strong>must</strong> be in the same location in every datapacks of yours. I recommend that you put it inside <code>/data/global/advancements/&lt;namespace&gt;.json</code>.</p>
+<pre><code class="language-json">{
+    &quot;display&quot;: {
+        &quot;title&quot;: &quot;&lt;Your name&gt;&quot;,
+        &quot;description&quot;: &quot;&quot;,
+        &quot;icon&quot;: {
+            &quot;item&quot;: &quot;minecraft:player_head&quot;,
+            &quot;nbt&quot;: &quot;{SkullOwner: '&lt;your_minecraft_name&gt;'}&quot;
+        },
+        &quot;show_toast&quot;: false,
+        &quot;announce_to_chat&quot;: false
+    },
+    &quot;parent&quot;: &quot;global:root&quot;,
+    &quot;criteria&quot;: {
+        &quot;trigger&quot;: {
+            &quot;trigger&quot;: &quot;minecraft:tick&quot;
+        }
+    }
+}
+</code></pre>
+<blockquote>
+<p><strong>Note</strong><br />
+If you are working on a project with multiple people you can choose to:</p>
+<ul>
+<li>Display this advancement as your own and credit them with other methods.</li>
+<li>Display this advancement with the &quot;team name&quot; of your choice.</li>
+<li>Display a &quot;<a href="style_datapack_advancement.html#extra-standalone-datapack">Standalone Datapack</a>&quot; instead.</li>
+</ul>
+</blockquote>
+<h2><a class="header" href="#3-datapack-advancement" id="3-datapack-advancement">3. Datapack Advancement</a></h2>
+<p>This advancement is used to display installation information about your datapack. It should be unique among your other datapacks.</p>
+<p><img src="./style/advancement-datapack.png" alt="" /></p>
+<p>You can create this advancement anywhere as long as you <strong>don't</strong> pollute <code>/data/global/advancements/folder</code></p>
+<pre><code class="language-json">{
+    &quot;display&quot;: {
+        &quot;title&quot;: &quot;&lt;datapack name&gt;&quot;,
+        &quot;description&quot;: &quot;&lt;datapack description&gt;&quot;,
+        &quot;icon&quot;: {
+            &quot;item&quot;: &quot;&lt;item&gt;&quot;
+        },
+        &quot;announce_to_chat&quot;: false,
+        &quot;show_toast&quot;: false
+    },
+    &quot;parent&quot;: &quot;global:&lt;namespace&gt;&quot;,
+    &quot;criteria&quot;: {
+        &quot;trigger&quot;: {
+            &quot;trigger&quot;: &quot;minecraft:tick&quot;
+        }
+    }
+}
+</code></pre>
+<h2><a class="header" href="#note-1" id="note-1">Note</a></h2>
+<p>The syntax <code>&lt;...&gt;</code> indicates that you have to replace it with something else!</p>
+<h2><a class="header" href="#extra-standalone-datapack" id="extra-standalone-datapack">Extra: Standalone Datapack</a></h2>
+<p>This is an optional syntax that you can take to display installed datapack <em>without</em> displaying the creator's information.</p>
+<p>To implement this you simply skip the <a href="style_datapack_advancement.html#2-namespace-advancement">#2: Namespace Advancement</a> step and make sure that in step <a href="style_datapack_advancement.html#3-datapack-advancement">#3: Datapack Advancement</a> you create your file inside <code>/data/global/advancements/standalone/</code> directory.</p>
+<blockquote>
+<p>Keep in mind that if you are planning to release more datapacks under this name. You should use the normal syntax over this one.</p>
+</blockquote>
+<h1><a class="header" href="#datapack-uninstallation" id="datapack-uninstallation">Datapack Uninstallation</a></h1>
+<h2><a class="header" href="#about-2" id="about-2">About</a></h2>
+<p>This guideline ensures that you have a way of uninstalling <em>most</em> of the contents of your datapack. The word &quot;most&quot; is used here because minecraft does not provide the necessary tool for us to actually uninstall or remove the entirety of datapack.</p>
+<h2><a class="header" href="#implementation-1" id="implementation-1">Implementation</a></h2>
+<p>There are no rules enforcing how you should implement the uninstallation method as long as you did implement it. But the following section is one of the many ways to implement it.</p>
+<h3><a class="header" href="#uninstallation-function" id="uninstallation-function">Uninstallation Function</a></h3>
+<p>You can create an &quot;uninstallation function&quot;, which when ran, will remove most of the content added from your datapack. You can tell the user about this function inside your project page or anywhere you like.</p>
+<h1><a class="header" href="#tier-system" id="tier-system">Tier System</a></h1>
+<p>Each convention has a varying degree of importance, this system is put in place to categorized the importance of each convention.</p>
+<table><thead><tr><th>Levels</th><th>About</th></tr></thead><tbody>
+<tr><td>Tier 1</td><td>A convention that doesn't contribute to ensuring compatibility between datapacks, <strong>or</strong> a convention that has just been newly voted in</td></tr>
+<tr><td>Tier 2</td><td>Transition phase from Tier 1 to Tier 3, This also serve as an adoption phase to encourage datapacker to follow these conventions to ensure compatibility in the future.</td></tr>
+<tr><td>Tier 3</td><td>The most important conventions that <strong>must</strong> be followed to ensure compatibility. Every datapacks is required to follow this convention, or it will break otherwise.</td></tr>
+</tbody></table>
+<h2><a class="header" href="#promoting-a-convention" id="promoting-a-convention">Promoting a convention</a></h2>
+<p>A convention can be promoted into a higher tier if it fits in any of the following conditions:</p>
+<ul>
+<li><strong>Tier 1</strong> Convention cannot ensure compatibility without forcing that every datapack must follow it. (Tier 1 -&gt; Tier 2)</li>
+<li><strong>Tier 2</strong> Convention has been adopted into a certain amount of datapacks. (Tier 2 -&gt; Tier 3)</li>
+</ul>
+<p>On the contrary, a convention can also be demoted into lower-tier if the compatibility the convention ensures become obsolete with the new update or the majority of datapackers sees so.</p>
+<h2><a class="header" href="#shorthand" id="shorthand">Shorthand</a></h2>
+<p>The tier can also be represented as a <code>*</code> symbol.</p>
+<ul>
+<li>Tier 1 -&gt; <code>*</code></li>
+<li>Tier 2 -&gt; <code>**</code></li>
+<li>Tier 3 -&gt; <code>***</code></li>
+</ul>
+<p>This can be attached after the convention name like so: <code>Datapack Advancement (*)</code>, <code>Common Trait Convention (**)</code>, <code>Shulker Box Loot Table (***)</code></p>
+<h1><a class="header" href="#about-3" id="about-3">About</a></h1>
+<p>This section contains a list of conventions and where it is in the tier system.</p>
+<table><thead><tr><th>Convention</th><th>Levels</th></tr></thead><tbody>
+<tr><td><a href="https://mc-datapacks.github.io/en/conventions/datapack_advancement.html">Datapack Advancement</a></td><td>Tier 1</td></tr>
+<tr><td><a href="https://mc-datapacks.github.io/en/conventions/datapack_uninstallation.html">Datapack Uninstallation</a></td><td>Tier 1</td></tr>
+<tr><td><a href="https://mc-datapacks.github.io/en/conventions/global_durability.html">Global Durability Convention</a></td><td>Tier 1</td></tr>
+<tr><td><a href="https://mc-datapacks.github.io/en/conventions/common_trait.html">Common Trait Convention</a></td><td>Tier 2</td></tr>
+<tr><td><a href="https://mc-datapacks.github.io/en/conventions/namespace.html">Namespace Convention</a></td><td>Tier 2</td></tr>
+<tr><td><a href="https://mc-datapacks.github.io/en/conventions/global_ignoring_tag.html">Global Ignoring Tag</a></td><td>Tier 3</td></tr>
+<tr><td><a href="https://mc-datapacks.github.io/en/conventions/custom_model_id.html">Custom Model ID</a></td><td>Tier 3</td></tr>
+<tr><td><a href="https://mc-datapacks.github.io/en/conventions/shulker_box_loot_table.html">Shulker Box Loot Table</a></td><td>Tier 3</td></tr>
+</tbody></table>
+<blockquote>
+<p>This <strong>must</strong> be updated whenever a change has been made to the official conventions list by any means!</p>
+</blockquote>
+<h1><a class="header" href="#convention-banner" id="convention-banner">Convention Banner</a></h1>
+<ul>
+<li>
+<p>Datapack that has followed a bare metal <strong>Tier 3</strong> conventions are allowed to use this banner
+<img src="https://i.imgur.com/4Z0ioH5.png" alt="" /></p>
+</li>
+<li>
+<p>Datapack that has followed <strong>Tier 3</strong> conventions and various style-related conventions defined in the <a href="./style_guideline.html">Style Guideline</a> section can use this banner.
+<img src="https://i.imgur.com/ltLPoQp.png" alt="" /></p>
+</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+        
+        
+
+    </body>
+</html>
