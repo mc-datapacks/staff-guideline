@@ -9,10 +9,6 @@
 	- [Datapack Advancement (*)](./review_advancement.md)
 	- [Datapack Uninstallation (*)](./review_uninstallation.md)
 
-- [Style Guideline](./style_guideline.md)
-	- [Datapack Advancement](./style_datapack_advancement.md)
-	- [Datapack Uninstallation](./style_uninstallation.md)
-
 - [Tier System](./tier.md)
 	- [Tier List](./tier_list.md)
 
