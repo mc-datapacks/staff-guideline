@@ -8,11 +8,9 @@ Although this step is not required, this tooling is recommended by me for its co
 
 1. Install [VS Code](https://code.visualstudio.com/) or [VS Codium](https://vscodium.com/)
 2. Install the following extensions.
-    1. [Datapack Helper Plus (MCF)](https://marketplace.visualstudio.com/items?itemName=SPGoding.datapack-language-server)
+    1. [Datapack Helper Plus](https://marketplace.visualstudio.com/items?itemName=SPGoding.datapack-language-server)
         - This extension provides a syntax highlighting and various helper functionality to navigate through datapack.
-    2. [Datapack Helper Plus (JSON)](https://marketplace.visualstudio.com/items?itemName=SPGoding.datapack-json)
-        - This extension provide similar functionality to `MCF` but for JSON files.
-    3. [tellraw preview](https://marketplace.visualstudio.com/items?itemName=actuallyboomber.tellraw-preview)
+    2. [tellraw preview](https://marketplace.visualstudio.com/items?itemName=actuallyboomber.tellraw-preview)
         - This extension provides text preview for commands that display a message to the player.
 
 ## Verifying a Datapack
